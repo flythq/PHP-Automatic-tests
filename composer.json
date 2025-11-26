@@ -1,0 +1,21 @@
+{
+    "name": "hexlet/code",
+    "version": "1.0.0",
+    "description": "PHP: Automatic tests",
+    "license": [
+      "MIT"
+    ],
+    "autoload": {
+      "files": [
+        "src/StringUtils.php"
+      ]
+    },
+    "authors": [
+        {
+            "name": "Andrey Nikolaenkov"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}
