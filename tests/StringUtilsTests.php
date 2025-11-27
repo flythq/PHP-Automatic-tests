@@ -8,12 +8,9 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+use Webmozart\Assert\Assert;
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::same(\StringUtils\capitalize('hello'), 'Hello');
+Assert::same(\StringUtils\capitalize(''), '');
 
 echo 'Все тесты пройдены!';
